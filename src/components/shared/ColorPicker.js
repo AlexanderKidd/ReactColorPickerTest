@@ -54,12 +54,12 @@ const ColorPicker = ({color, setColor}) => {
 
     return (
         <>
-            <table border="1">
+            <table aria-label="Color Picker table view" border="1">
                 <tbody>
                     {rows.map((row, rowIndex) => (
                         <tr key={rowIndex}>
                             {row.map((cell, cellIndex) => (
-                                <td key={cellIndex} className={"colorPickerCell " + (selectedColor === cell.value ? "active" : "")} style={{'backgroundColor': cell.value}} onClick={() => setColorPickerColor(cell.value)}>
+                                <td aria-label={"Button for color named: " + cell.name } aria-describedby={"Hex color description: " + cell.value} key={cellIndex} className={"colorPickerCell " + (selectedColor === cell.value ? "active" : "")} style={{'backgroundColor': cell.value}} onClick={() => setColorPickerColor(cell.value)}>
                                     {cell.name} {selectedColor === cell.value && <div>{cell.value}</div>}
                                 </td>
                             ))}

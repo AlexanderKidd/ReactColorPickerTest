@@ -23,15 +23,15 @@ const App = () => {
             </div>
 
             <div className="row">
-                <div className="box">
+                <div className="box" aria-label="Color Picker minimal example">
                     <ColorPicker color={color} setColor={setColor}></ColorPicker>
                 </div>
 
-                <div className="box">
+                <div className="box" aria-label="Color Picker button toggle example">
                     <ColorPickerButton color={color} setColor={setColor}></ColorPickerButton>
                 </div>
 
-                <div className="box">
+                <div className="box" aria-label="Color Picker hover right example">
                     <div className="hover">
                         TAKE HOVER (over this)
                         <span className="hovertext"><ColorPicker color={color} setColor={setColor}></ColorPicker></span>
