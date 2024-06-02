@@ -1,0 +1,38 @@
+.box {
+    margin: 20px;
+    padding-right: 10px;
+    border-right: 1px solid gray;
+}
+
+.row {
+    display: flex;
+    margin-left: 10px;
+}
+
+button {
+    border: 1;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.hover {
+    position: relative;
+    display: inline-block;
+}
+
+.hover .hovertext {
+    visibility: hidden;
+    width: 100%;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+
+  .hover:hover .hovertext {
+    visibility: visible;
+  }
